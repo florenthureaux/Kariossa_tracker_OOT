@@ -753,7 +753,7 @@ function key_on_click(id: number){
   skull_in_logic()
  };
  function key_on_right_click(id: number){
-  var image_upgrade = document.getElementById(key_dungeon[id-65].upgrade) as HTMLImageElement;
+  var image_upgrade = document.getElementById(key_dungeon[id-65].upgrade!) as HTMLImageElement;
   if (has_key_forest > 0 && id == 65){
     if (has_key_forest == 1){
       document.getElementById("65")!.style.opacity = "0.5";
