@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OOTR Kariossa's Tracker</title>
+  <base href="/">
+  <meta name=
+  "viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+<script>
+  // init
+    function onitemclick(obj) {
+      var id = obj.id;
+      // blurry item on click or upgrade 
+      if (id == 40 && document.getElementById("skull_compt").innerHTML < 100 && document.getElementById(id).style.opacity == 1 ){
+        document.getElementById("skull_compt").innerHTML++;
+      }
+      else if(id == 13 && document.getElementById(id).style.opacity == 1) {
+        document.getElementById("hookshot_upgrade").src="assets/img/OoT_Longshot_Icon.png"
+        }
+      else if(id == 11 && document.getElementById(id).style.opacity == 1) {
+        document.getElementById("ocarina_upgrade").src="assets/img/OoT_Ocarina_of_Time_Icon.png"
+        } 
+      else if(id == 28 && document.getElementById(id).style.opacity == 1 && document.getElementById("strength_upgrade").src=="http://localhost:4200/assets/img/OoT_Goron_Bracelet_Icon.png" ) {
+      document.getElementById("strength_upgrade").src="assets/img/OoT_Silver_Gauntlets_Icon.png"
+      } 
+      else if(id == 28 && document.getElementById(id).style.opacity == 1 && document.getElementById("strength_upgrade").src=="http://localhost:4200/assets/img/OoT_Silver_Gauntlets_Icon.png" ) {
+      document.getElementById("strength_upgrade").src="assets/img/OoT_Golden_Gauntlets_Icon.png"
+      }
+      else if(id == 28 && document.getElementById(id).style.opacity == 1 && document.getElementById("strength_upgrade").src=="http://localhost:4200/assets/img/OoT_Golden_Gauntlets_Icon.png" ) {
+      // nothing happenned
+      } 
+      else if(id == 29 && document.getElementById(id).style.opacity == 1) {
+        document.getElementById("scale_upgrade").src="assets/img/OoT_Golden_Scale_Icon.png"
+      }
+      else if(id == 30 && document.getElementById(id).style.opacity == 1) {
+        document.getElementById("magic_upgrade").src="assets/img/Magic_Jar_icon.png"
+      }
+      else if(id == 31 && document.getElementById(id).style.opacity == 1) {
+        document.getElementById("wallet_upgrade").src="assets/img/OoT_Giant_Wallet_Icon.png"
+      }
+      else if(id == 31 && document.getElementById(id).style.opacity == 1) {
+        document.getElementById("wallet_upgrade").src="assets/img/OoT_Giant_Wallet_Icon.png"
+      }
+      else if (id == 3 && document.getElementById(id).style.opacity == 1 && document.getElementById("bomb_upgrade").src=="http://localhost:4200/assets/img/Bomb_icon.png"){
+        document.getElementById("bomb_upgrade").src="assets/img/Bomb_icon_30.png"
+      }
+      else if (id == 3 && document.getElementById(id).style.opacity == 1 && document.getElementById("bomb_upgrade").src=="http://localhost:4200/assets/img/Bomb_icon_30.png"){
+        document.getElementById("bomb_upgrade").src="assets/img/Bomb_icon_40.png"
+      }
+      else if (id == 3 && document.getElementById(id).style.opacity == 1 && document.getElementById("bomb_upgrade").src=="http://localhost:4200/assets/img/Bomb_icon_40.png"){
+        // nothing
+      }
+      else if (id == 4 && document.getElementById(id).style.opacity == 1 && document.getElementById("bow_upgrade").src=="http://localhost:4200/assets/img/OoT_Fairy_Bow_Icon.png"){
+        document.getElementById("bow_upgrade").src="assets/img/OoT_Fairy_Bow_Icon_40.png"
+      }
+      else if (id == 4 && document.getElementById(id).style.opacity == 1 && document.getElementById("bow_upgrade").src=="http://localhost:4200/assets/img/OoT_Fairy_Bow_Icon_40.png"){
+        document.getElementById("bow_upgrade").src="assets/img/OoT_Fairy_Bow_Icon_50.png"
+      }
+      else if (id == 4 && document.getElementById(id).style.opacity == 1 && document.getElementById("bow_upgrade").src=="http://localhost:4200/assets/img/OoT_Fairy_Bow_Icon_50.png"){
+        // nothing
+      }
+      else if (id == 2 && document.getElementById(id).style.opacity == 1 && document.getElementById("nut_upgrade").src=="http://localhost:4200/assets/img/Deku_Nut_icon.png"){
+        document.getElementById("nut_upgrade").src="assets/img/Deku_Nut_icon_30.png"
+      }
+      else if (id == 2 && document.getElementById(id).style.opacity == 1 && document.getElementById("nut_upgrade").src=="http://localhost:4200/assets/img/Deku_Nut_icon_30.png"){
+        document.getElementById("nut_upgrade").src="assets/img/Deku_Nut_icon_40.png"
+      }
+      else if (id == 2 && document.getElementById(id).style.opacity == 1 && document.getElementById("nut_upgrade").src=="http://localhost:4200/assets/img/Deku_Nut_icon_40.png"){
+        // nothing
+      }
+      else if (id == 1 && document.getElementById(id).style.opacity == 1 && document.getElementById("stick_upgrade").src=="http://localhost:4200/assets/img/Deku_Stick_icon.png"){
+        document.getElementById("stick_upgrade").src="assets/img/Deku_Stick_icon_20.png"
+      }
+      else if (id == 1 && document.getElementById(id).style.opacity == 1 && document.getElementById("stick_upgrade").src=="http://localhost:4200/assets/img/Deku_Stick_icon_20.png"){
+        document.getElementById("stick_upgrade").src="assets/img/Deku_Stick_icon_30.png"
+      }
+      else if (id == 1 && document.getElementById(id).style.opacity == 1 && document.getElementById("stick_upgrade").src=="http://localhost:4200/assets/img/Deku_Stick_icon_30.png"){
+        // nothing
+      } 
+      else if (id == 40 && document.getElementById(id).style.opacity == 1){
+        // nothing
+      } 
+      else if (id == 10 && document.getElementById(id).style.opacity == 1 && document.getElementById("slingshot_upgrade").src=="http://localhost:4200/assets/img/OoT_Fairy_Slingshot_Icon.png"){
+        document.getElementById("slingshot_upgrade").src="assets/img/OoT_Fairy_Slingshot_Icon_40.png"
+      }
+      else if (id == 10 && document.getElementById(id).style.opacity == 1 && document.getElementById("slingshot_upgrade").src=="http://localhost:4200/assets/img/OoT_Fairy_Slingshot_Icon_40.png"){
+        document.getElementById("slingshot_upgrade").src="assets/img/OoT_Fairy_Slingshot_Icon_50.png"
+      }
+      else if (id == 10 && document.getElementById(id).style.opacity == 1 && document.getElementById("slingshot_upgrade").src=="http://localhost:4200/assets/img/OoT_Fairy_Slingshot_Icon_50.png"){
+        // nothing
+      } 
+      else{
+        if(document.getElementById(id).style.opacity != 0.5){
+          document.getElementById(id).style.opacity = 0.5;
+        }
+        else{
+          document.getElementById(id).style.opacity = 1;
+        } 
+
+      }
+    }
+    function rightclick(obj) {
+      var id = obj.id;
+      if (id == 40 && document.getElementById("skull_compt").innerHTML > 0){
+        document.getElementById("skull_compt").innerHTML -= 1;
+      }
+      else if (document.getElementById(id).style.opacity == 1 && document.getElementById("hookshot_upgrade").src == "http://localhost:4200/assets/img/OoT_Hookshot_Icon.png" && id == 13){
+        document.getElementById(id).style.opacity = 0.5;
+      }
+      else if (document.getElementById(id).style.opacity == 1 && document.getElementById("scale_upgrade").src == "http://localhost:4200/assets/img/OoT_Silver_Scale_Icon.png" && id == 29){
+        document.getElementById(id).style.opacity = 0.5;
+      }
+      else if (document.getElementById(id).style.opacity == 1 && document.getElementById("magic_upgrade").src == "http://localhost:4200/assets/img/Magic_Jar_(small)_icon.png" && id == 30){
+        document.getElementById(id).style.opacity = 0.5;
+     }
+      else if (document.getElementById(id).style.opacity == 1 && document.getElementById("wallet_upgrade").src == "http://localhost:4200/assets/img/OoT_Adult_Wallet_Icon.png" && id == 31){
+        document.getElementById(id).style.opacity = 0.5;
+      }
+      
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("40").style.opacity = 1;
+})
+    
+  
+</script>
+</html>

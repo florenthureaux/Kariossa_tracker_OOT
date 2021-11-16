@@ -1,0 +1,54 @@
+
+<div class="item_tracker">
+    <table class="item_grid">
+       <div>
+         <tr>
+               <td class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5;" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of items1"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></td> 
+         </tr>
+         <tr>
+               <td class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of items2"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></td> 
+          </tr>
+          <tr>
+               <td class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of items3"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></td> 
+          </tr>
+          <tr>
+               <td class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of items4"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></td> 
+          </tr>
+          <div style="display:flex;">
+            <span class="row5" id="{{item.id}}" style="opacity: 0.5;margin-left: 6px;" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of items5"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span>  
+            <span class="skull_compt" id="skull_compt" style="margin-left: 6px;margin-top: 10px;">40</span>
+            <div style="border-style:outset; margin-left: 3px; padding-right: 12px;">
+              <span class="skull_compt_logic_text" id="skull_compt_logic_text" style="display: flex; flex-direction: column;align-items: center; margin-left: 15px;">Skull in logic: <span class="skull_compt_logic_number" id="skull_compt_logic_number">0</span></span>   
+            </div>
+          </div>
+          <div class="song_layout1">
+            <span class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of song1"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+          </div>
+          <div class="song_layout2">
+            <span class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of song2"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+          </div>
+          <div class="layout_med_stone">
+             <span class="{{item.name}}" id="{{item.id}}" style="width: 25px; opacity: 0.5;margin-right: 6px" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of rewards1"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span>
+          </div>
+          <div class="layout_med_title">
+            <span class="free">Free </span>
+            <span class="deku">Deku </span>
+            <span class="dc">DC </span>
+            <span class="jabu">Jabu </span>
+         </div>
+          <div style="position: relative; width: 40px; display: flex;" class="layout_med_stone2">
+            <span class="{{item.name}}" id="{{item.id}}" style="width: 40px; opacity: 0.5;" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of rewards2"><img style="max-width: 36px;" id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+          </div>    
+       </div>
+         <div class="layout_med_title2">
+            <span class="forest">Forest </span>
+            <span class="fire">Fire </span>
+            <span class="water">Water </span>
+            <span class="shadow">Shadow </span>
+            <span class="spirit">Spirit </span>
+         </div>
+         <div class="key_layout">
+            <span class="{{item.name}}" id="{{item.id}}" style="width: 25px; opacity: 0.5"  *ngFor="let item of key_dungeon"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+          </div>  
+    </table>
+</div>

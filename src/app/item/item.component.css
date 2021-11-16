@@ -1,0 +1,82 @@
+.layout_med_title,.layout_med_stone{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    padding-left: 50px;
+}
+.layout_med_title2,.layout_med_stone2{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.free{
+    margin-left: 18px;
+    margin-right: 35px;
+}
+.deku{
+    margin-right: 38px;
+}
+.dc{
+    margin-right: 40px;
+}
+.jabu{
+    margin-right: 15px;
+}
+.forest{
+    margin-left: 14px;
+    margin-right: 34px;
+}
+.fire{
+    margin-right: 35px;
+}
+.water{
+    margin-right: 25px;
+}
+.shadow{
+    margin-right: 27px;
+}
+.item_layout{
+    padding-right: 5px;
+}
+.row5{
+    margin-left: 45px;
+    
+}
+.Kokiri_Boots{
+    padding-left: 5px;
+}
+.Forest_Medallon,.Fire_Medallon,.Water_Medallon,.Shadow_Medallon,.Spirit_Medallon,.Light_Medallon,.Fire_Stone,.Water_Stone,.Forest_Stone {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid_item{
+    border: 1px solid black;
+}
+.key_layout{
+    margin-top: 2px;
+}
+.song_layout1,.song_layout2{
+   margin-left: 76px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+.Small_Key_Forest{
+margin-left: 20px;
+}
+.Small_Key_Fire{
+    margin-left: 15px;
+}
+.Small_Key_Water{
+    margin-left: 12px;
+}
+.Small_Key_Shadow{
+    margin-left: 16px;
+}
+.Small_Key_Spirit{
+    margin-left: 16px;
+}
+
+
+
