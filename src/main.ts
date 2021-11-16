@@ -12,6 +12,7 @@ import { ITEMS3 } from './app/item_list';
 import { ITEMS4 } from './app/item_list';
 import { ITEMS5 } from './app/item_list';
 var has_hookshot = false;
+var has_kokiri_sword = false;
 var has_longshot = false;
 var has_hammer = false;
 var has_bomb = false;
@@ -135,6 +136,9 @@ item1.forEach(element => {
         document.getElementById("6")!.style.opacity = "0.5"
       break;
       case 7:
+        has_kokiri_sword = false;
+        document.getElementById("7")!.style.opacity = "0.5";
+      break;
       case 8:
       case 9:
         document.getElementById(id.toString())!.style.opacity = "0.5"
@@ -166,6 +170,7 @@ item1.forEach(element => {
       has_dins=!has_dins
       break;
     case 7:
+      has_kokiri_sword=!has_kokiri_sword
       break;
     case 8:
       break;
@@ -578,6 +583,7 @@ song1.forEach(element => {
         document.getElementById("55")!.style.opacity = "0.5";
         break;
       case 56:
+        document.getElementById("56")!.style.opacity = "0.5";
       break;
       case 57:
         has_song_of_time= false;
@@ -633,15 +639,17 @@ song2.forEach(element => {
         document.getElementById("60")!.style.opacity = "0.5";
       break;
       case 61:
+        document.getElementById("61")!.style.opacity = "0.5";
         break;
       case 62:
+        has_requiem_of_spirit= false;
+        document.getElementById("62")!.style.opacity = "0.5";
       break;
       case 63:
         has_nocturne_of_shadow= false;
         document.getElementById("63")!.style.opacity = "0.5";
       break;
       case 64:
-        has_requiem_of_spirit= false;
         document.getElementById("64")!.style.opacity = "0.5";
       break;
       default:

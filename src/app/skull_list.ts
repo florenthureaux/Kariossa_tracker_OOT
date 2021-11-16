@@ -3,10 +3,10 @@ import { Skull_total } from './skull';
 export const Skull_Total: Skull_total[] = [
                             /*  ALL dungeon skull  */
     /*  Deku Tree  */                
-  { id:  1, name: 'Deku Tree GS Compass Room', data: true, requirement: "none"},
-  { id:  2, name: 'Deku Tree GS Basement Vines', data: false, requirement: "has_slingshot || has_boomerang || has_bomb"},
-  { id:  3, name: 'Deku Tree GS Basement Gate' , data: true, requirement: "none"},
-  { id:  4, name: 'Deku Tree GS Basement Back Room' , data: false, requirement: "has_boomerang && has_bomb"},
+  { id:  1, name: 'Deku Tree GS Compass Room', data: true, requirement: "has_kokiri_sword"},
+  { id:  2, name: 'Deku Tree GS Basement Vines', data: false, requirement: "has_kokiri_sword && (has_slingshot || has_boomerang || has_bomb)"},
+  { id:  3, name: 'Deku Tree GS Basement Gate' , data: true, requirement: "has_kokiri_sword"},
+  { id:  4, name: 'Deku Tree GS Basement Back Room' , data: false, requirement: "has_kokiri_sword && has_boomerang && has_bomb"},
     /*  Dodongos Cavern  */
   { id:  5, name: 'Dodongos Cavern GS Side Room Near Lower Lizalfos' , data: false,requirement: "has_strength1 || has_bomb"},
   { id:  6, name: 'Dodongos Cavern GS Scarecrow' , data: false, requirement: "(has_strength1 || has_bomb || has_hammer) && has_hookshot"},
