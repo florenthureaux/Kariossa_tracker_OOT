@@ -16,17 +16,27 @@
           </tr>
           <div style="display:flex;">
             <span class="row5" id="{{item.id}}" style="opacity: 0.5;margin-left: 6px;" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of items5"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span>  
-            <span class="skull_compt" id="skull_compt" style="margin-left: 6px;margin-top: 10px;">40</span>
+            <span class="skull_compt" id="skull_compt" style="margin-left: 6px;margin-top: 10px;">0</span>
             <div style="border-style:outset; margin-left: 3px; padding-right: 12px;">
               <span class="skull_compt_logic_text" id="skull_compt_logic_text" style="display: flex; flex-direction: column;align-items: center; margin-left: 15px;">Skull in logic: <span class="skull_compt_logic_number" id="skull_compt_logic_number">0</span></span>   
             </div>
           </div>
-          <div class="song_layout1">
-            <span class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of song1"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+          <div style="display: flex;">
+            <div id="gomode_1" style="opacity: 0.2;">
+              <p style="background-image: url(../../assets/img/background.png); height: 60px;width: 60px; background-position: center; text-align: center;margin-top: 13px;margin-left: 5px; display: flex; align-items: center;justify-content: center;"><span style="color: blue;">GO MODE</span></p>
+            </div>
+          <div>
+            <div class="song_layout1">
+              <span class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of song1"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+            </div>
+            <div class="song_layout2">
+              <span class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of song2"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+            </div>
           </div>
-          <div class="song_layout2">
-            <span class="{{item.name}}" id="{{item.id}}" style="width: 20px; opacity: 0.5" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of song2"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span> 
+          <div id="gomode_2" style="opacity: 0.2;">
+            <p style="background-image: url(../../assets/img/background.png); height: 60px;width: 60px; background-position: center; text-align: center;margin-top: 13px;margin-left: 10px; display: flex; align-items: center;justify-content: center;"><span style="color: blue;">GO MODE</span></p>
           </div>
+        </div>
           <div class="layout_med_stone">
              <span class="{{item.name}}" id="{{item.id}}" style="width: 25px; opacity: 0.5;margin-right: 6px" onclick="onitemclick(this)" oncontextmenu="rightclick(this)" *ngFor="let item of rewards1"><img id="{{item.upgrade}}" src="{{item.data}}" alt="image"/></span>
           </div>

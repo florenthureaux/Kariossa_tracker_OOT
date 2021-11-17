@@ -11,6 +11,7 @@ import { ITEMS2 } from './app/item_list';
 import { ITEMS3 } from './app/item_list';
 import { ITEMS4 } from './app/item_list';
 import { ITEMS5 } from './app/item_list';
+var has_go_mode = false;
 var has_hookshot = false;
 var has_kokiri_sword = false;
 var has_longshot = false;
@@ -822,7 +823,22 @@ function key_on_click(id: number){
   }
   skull_in_logic();
 };
+document.getElementById("gomode_1")!.addEventListener("click", ongomodeclick, false);
+document.getElementById("gomode_1")!.addEventListener('contextmenu', ongomodeclick, false);
+document.getElementById("gomode_2")!.addEventListener("click", ongomodeclick, false);
+document.getElementById("gomode_2")!.addEventListener('contextmenu', ongomodeclick, false);
 
+function ongomodeclick(){
+if (has_go_mode == false){
+  document.getElementById("gomode_1")!.style.opacity = "1";
+  document.getElementById("gomode_2")!.style.opacity = "1";
+}
+else{
+  document.getElementById("gomode_1")!.style.opacity = "0.2";
+  document.getElementById("gomode_2")!.style.opacity = "0.2";
+}
+has_go_mode = !has_go_mode;
+}
 })
 
 
@@ -849,6 +865,7 @@ function skull_in_logic(){
   sum_skull(skull_total);
   document.getElementById("skull_compt_logic_number")!.innerHTML = skull_compt.toString();
 }
+
 if (environment.production) {
   enableProdMode();
 }
