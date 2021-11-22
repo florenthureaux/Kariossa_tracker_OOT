@@ -37,6 +37,8 @@ What I have done :
 - put the app in Github
 - make ugly go mode button
 - add settings.json to change logic for skull in some settings (open deku)
+- change img for go mode button
+- make ice cavern mode based on item you possessed
 
 Know issue : 
 
