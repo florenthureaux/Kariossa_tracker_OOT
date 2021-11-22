@@ -8,6 +8,7 @@ What to do :
 - better go mode button (maybe based on dungeon reward)
 - review css of most of the app
 - put upgrade for bigoron quest and mask quest
+- add other settings in settings.json
 
 
 
@@ -35,18 +36,9 @@ What I have done :
 - put upgrade on most 'not important' item
 - put the app in Github
 - make ugly go mode button
+- add settings.json to change logic for skull in some settings (open deku)
 
 Know issue : 
 
 
-
-Layout thinking :
-
-Stick	, nut, bomb, bow, fa, din’s , Ks , msword, bgs
-Sling,ocarina,chu,hookshot,ia,fw,Deku Shield ; hylian; mirror
-Boom,lens,bean,hammer,light,naryu	,tunic Kokiri,goron,zora
-Force,scale,magie,Wallet,bottle,bigoron Kokiri boot, iron, hover
-Skull in logic : ; (skull hors logique recuperable :)
-All stone/med(name is already write just need to choose the med/stone) + key/bk
-Text for all stone med
 

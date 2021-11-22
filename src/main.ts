@@ -11,6 +11,8 @@ import { ITEMS2 } from './app/item_list';
 import { ITEMS3 } from './app/item_list';
 import { ITEMS4 } from './app/item_list';
 import { ITEMS5 } from './app/item_list';
+import OpenDeku from './settings.json';
+var settings_open_deku = OpenDeku;
 var has_go_mode = false;
 var has_hookshot = false;
 var has_kokiri_sword = false;
