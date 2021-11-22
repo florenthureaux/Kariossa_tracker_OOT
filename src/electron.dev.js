@@ -13,7 +13,7 @@ const createWindow = () => {
     setTimeout(() => {
         // Create the browser window.
         win = new BrowserWindow({
-            width: 360,
+            width: 370,
             height: 500,
             resizable: false,
             icon: './src/favicon.ico'

@@ -1,2 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "app/item/item.component.css";
+body{
+    padding-left: 3px;
+}
+.gomode_1{
+   margin-top: 10px;
+   margin-right:5px;
+
+}
+.gomode_2{
+    margin-left: 5px;
+ margin-top: 12px;
+}
